@@ -1,1 +1,51 @@
-Hi
+<!-- http://bl.ocks.org/mbostock/3883245-->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+	font: 10px sans-serif;
+	position: relative;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.x.axis path {
+	display: none;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 3px;
+}
+
+.large {
+	font-size: 1.5em;
+}
+
+</style>
+<body>
+	<div class="large">
+		I set out to answer the age old question.<br>Which gets searched for more: cats or butts?
+	</div>
+	<br><br>
+	<div>
+		Values are all relative to each other. For example, a value of 20 means that it was searched 1/5 as much during that particular week as the maximum of all of the terms across the entire time range.
+	</div>
+	<div id="firstGraph"></div>
+	<div class="large">
+		Wow, who would have known that cats are that popular? However, we have not yet accounted for the singular search terms - "cat" and "butt". Will adding these terms open our eyes?
+	</div>
+	<div id="secondGraph"></div>
+	<div class="large">
+		Incredible, cat blows everything else out of the water! Butts barely even registers. Who would have guessed?
+	</div>
+</body>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="application.js"></script>
